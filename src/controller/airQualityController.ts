@@ -44,12 +44,12 @@ export async function getAirQualityGps(req: express.Request, res: express.Respon
 }
 
 
-cron.schedule("* * * * *", () => {
+export const requestCron = cron.schedule("* * * * *", () => {
     makeRequest()
 })
 
 
-async function makeRequest() {
+export async function makeRequest() {
     const LATITUDE = 48.856613;
     const LONGITUDE = 2.352222;
 

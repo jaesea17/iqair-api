@@ -27,7 +27,6 @@ exports.app.use(express_1.default.urlencoded({ extended: false }));
 exports.app.use((0, cookie_parser_1.default)());
 exports.app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
 exports.app.use('/api/air-quality', airQualityRoute_1.default);
-// app.use('/api/todos', todosRouter);
 // catch 404 and forward to error handler
 exports.app.use(function (req, res, next) {
     next((0, http_errors_1.default)(404));

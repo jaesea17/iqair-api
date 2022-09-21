@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "ts-node-dev --respawn ./bin/www",
     "compile": "tsc -w",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "dependencies": {
     "axios": "^0.27.2",

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAirQualityGps = exports.getAirQualityIp = void 0;
+exports.makeRequest = exports.requestCron = exports.getAirQualityGps = exports.getAirQualityIp = void 0;
 const axios_1 = __importDefault(require("axios"));
 const dataModel_1 = require("../model/dataModel");
 const uuid_1 = require("uuid");
@@ -46,7 +46,7 @@ async function getAirQualityGps(req, res) {
     }
 }
 exports.getAirQualityGps = getAirQualityGps;
-node_cron_1.default.schedule("* * * * *", () => {
+exports.requestCron = node_cron_1.default.schedule("* * * * *", () => {
     makeRequest();
 });
 async function makeRequest() {
@@ -99,3 +99,4 @@ async function makeRequest() {
         return details;
     }
 }
+exports.makeRequest = makeRequest;

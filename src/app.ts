@@ -27,7 +27,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/api/air-quality', airQualityRouter);
-// app.use('/api/todos', todosRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
