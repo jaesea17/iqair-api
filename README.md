@@ -3,8 +3,8 @@
 ### Setup
 
 1. Use and setup the project with `yarn`.
-2. Initialize tsconfig.
-4. Create .gitignore file to ignore the node_modules
+2. Run `yarn dev` to start the server
+3. Create .gitignore file to ignore the node_modules
 
 ## Problem Description:
 
