@@ -11,9 +11,6 @@
 - Sign up on iqair.com to get your api_key
 see example.env on how to use it
 
-## NOTE
- - Users must not be authenticated before viewing or browsing through products.
-
 ### Test
 
 - Run `yarn test` to start test
